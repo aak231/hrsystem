@@ -17,7 +17,6 @@ const EmployeeCard = (props) => {
           style={{ color: "red", marginTop: "7px"}}
         ></i>
         </div>
-        
       </div>
     </>
   );
