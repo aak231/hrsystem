@@ -1,13 +1,17 @@
-import React from 'react'
+import React from "react";
+import EmployeeCard from "./EmployeeCard";
 
-const EmployeeList = () => {
+const EmployeeList = (props) => {
+  console.log(props);
+
+  const renderEmployeeList = props.employees.map((employee) => {
+    return <EmployeeCard employee={employee}> </EmployeeCard>;
+  });
   return (
     <>
-        <div className='ui celled list'>
-            Employee List
-        </div>
+      <div className="ui large celled list">{renderEmployeeList}</div>
     </>
-  )
-}
+  );
+};
 
-export default EmployeeList
+export default EmployeeList;

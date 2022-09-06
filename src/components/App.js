@@ -5,12 +5,24 @@ import Header from "./Header";
 import EmployeeList from "./EmployeeList";
 
 function App() {
+  const employees = [
+    {
+        id: "1",
+        name: "Ahad Khan",
+        email: "ahadkhan@gmail.com"
+    },
+    {
+        id: "2",
+        name: "Tom Jones",
+        email: "tomjones@gmail.com"
+    }
+]
   return (
     <>
       <div className='ui container'>
         <Header/>
         <AddEmployee/>
-        <EmployeeList/>
+        <EmployeeList employees= {employees}/>
       </div>
     </>
   );

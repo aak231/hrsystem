@@ -10,3 +10,5 @@ const employees = [
         email: "tomjones@gmail.com"
     }
 ]
+
+export default employees;
